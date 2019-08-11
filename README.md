@@ -10,7 +10,7 @@ A dead simple image to use pflogsumm in your docker environment. :-)
 ** 20 min coffee time
 
 # Quckstart
-This repo is available as builded image at hub.docker.com:
+This repo is available as builded image at hub.docker.com: https://hub.docker.com/r/codeadmin/pflogsumm
 
 To use this image simply run the following command:
 
@@ -56,3 +56,4 @@ A big thankyou goes out to James S. Seymour, developer of pflogsumm (https://jim
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see https://www.gnu.org/licenses/.
+
