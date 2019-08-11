@@ -25,15 +25,15 @@ This will generate a report for today and pflogsumm will find the log at /maillo
 This command runs when you start the container without additional parameters.
 
 Perhaps you want to get a report and the log file is called "mymail.log"? No Problem - just add it like this:
-<code>-d today /maillog/mymail.log<code>
+<code>-d today /maillog/mymail.log</code>
 
 The complete command could be: <code>docker run --rm --name pflogsumm --volume mailserver_log:/maillog:ro ca/pflogsumm -d today /maillog/mymail.log</code>
 
 Feel free to start the container with some other options. It's your choice.
 
 # Docker Volume
-<code>maillog:ro<code>: Mount the volume of your mailserver log dir into this location. 
-This container doesn't need write privileges, so it's save to mount it read-only (<code>:ro<code>).
+<code>maillog:ro</code>: Mount the volume of your mailserver log dir into this location. 
+This container doesn't need write privileges, so it's save to mount it read-only (<code>:ro</code>).
 
 # Credits
 A big thankyou goes out to James S. Seymour, developer of pflogsumm (https://jimsun.linxnet.com/postfix_contrib.html)
