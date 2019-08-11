@@ -10,9 +10,11 @@ A dead simple image to use pflogsumm in your docker environment. :-)
 ** 20 min coffee time
 
 # Quckstart
+This repo is available as builded image at hub.docker.com:
+
 To use this image simply run the following command:
 
-<code>docker run --rm --name pflogsumm --volume mailserver_log:/maillog:ro ca/pflogsumm</code>
+<code>docker run --rm --name pflogsumm --volume mailserver_log:/maillog:ro codeadmin/pflogsumm</code>
 
 You'll get a summary for today as output to your terminal.
 
@@ -27,7 +29,7 @@ This command runs when you start the container without additional parameters.
 Perhaps you want to get a report and the log file is called "mymail.log"? No Problem - just add it like this:
 <code>-d today /maillog/mymail.log</code>
 
-The complete command could be: <code>docker run --rm --name pflogsumm --volume mailserver_log:/maillog:ro ca/pflogsumm -d today /maillog/mymail.log</code>
+The complete command could be: <code>docker run --rm --name pflogsumm --volume mailserver_log:/maillog:ro codeadmin/pflogsumm -d today /maillog/mymail.log</code>
 
 Feel free to start the container with some other options. It's your choice.
 
@@ -53,4 +55,4 @@ A big thankyou goes out to James S. Seymour, developer of pflogsumm (https://jim
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    along with this program.  If not, see https://www.gnu.org/licenses/.
